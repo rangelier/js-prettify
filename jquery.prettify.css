@@ -1,0 +1,181 @@
+﻿input.prettified:focus, button.prettified:focus, a.button:focus, span.button input:focus {
+  outline: none;
+}
+button.prettified, a.button, span.button {
+  position: relative;
+  border: 0; 
+  cursor: pointer;
+  font-family: "Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+  font-size: 12px;
+  color: black;
+  height: 33px;
+  letter-spacing: 1px;
+  background: transparent right -40px url(images/bg_button.png) no-repeat;
+  border: none;
+  padding: 0 15px 0 0;
+}
+a.button {
+  display: inline-block;
+  text-decoration: none;
+}
+span.button {
+  display: inline-block;
+  vertical-align: bottom;
+}
+button.prettified::-moz-focus-inner, input.prettified::-moz-focus-inner {
+  border: none;  /* overrides extra padding in Firefox */
+  padding: 0;
+}
+button.prettified span, a.button span, span.button input {
+  position: relative;
+  display: block; 
+  white-space: nowrap;
+  padding: 0 15px 0 30px;
+  margin: 0;
+  background: top left url(images/bg_button.png) no-repeat;
+  height: 33px;
+  line-height: 33px;
+  font-size: 12px;
+  border: none;
+}
+button.prettified.submit, a.button.submit, span.button.submit {
+  background-position: right -200px;
+}
+button.prettified.submit span, a.button.submit span, span.button.submit input {
+  background-position: left -160px;
+}
+button.prettified.submit:focus, a.button.submit:focus, span.button.submit.focus {
+  background-position: right -280px;
+}
+button.prettified.submit:focus span, a.button.submit:focus span, span.button.submit.focus input {
+  background-position: left -240px;
+}
+
+button.prettified:focus, a.button:focus, span.button.focus {
+  background-position: right -120px;
+}
+button.prettified:focus span, a.button:focus span, span.button.focus input {
+  background-position: left -80px;
+}
+button.prettified:active, a.button:active, span.button.active {
+  background-position: right -360px;
+}
+button.prettified:active span, a.button:active span, span.button.active input {
+  background-position: left -320px;
+}
+.textfield {
+  display: inline-block;
+  width: auto;
+  height: 31px;
+  margin: 0;
+  padding: 0 15px 0 0;
+  background: transparent right -40px url(images/bg_textbox.png) no-repeat;
+}
+.textfield input {
+  position:relative;
+  border: none;
+  padding: 5px 9px 5px 10px;
+  margin: 0;
+  background: transparent top left url(images/bg_textbox.png) no-repeat;
+  height: 21px;
+  font-family: "Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+  font-size: 12px;
+  line-height: 21px;
+}
+.textfield.error {
+  background-position: right -120px;
+}
+.textfield.error input {
+  background-position: left -80px;
+}
+.textfield.focus {
+  background-position: right -200px;
+}
+.textfield.focus input {
+  background-position: left -160px;
+}
+.checkbox {
+  display: inline-block;
+  background: transparent top left url(images/bg_checkbox.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
+}
+.checkbox input {
+  display: inline-block;
+}
+.checkbox.error {
+  background-position: left -40px;
+}
+.checkbox.checked.error {
+  background-position: left -100px;
+}
+.checkbox.focus {
+  background-position: left -20px;
+}
+.checkbox.checked {
+  background-position: left -60px;
+}
+.checkbox.checked.focus {
+  background-position: left -80px;
+}
+.radio {
+  display: inline-block;
+  background: transparent -20px top url(images/bg_checkbox.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
+}
+.radio input {
+  display: inline-block;
+}
+.radio.error {
+  background-position: -20px -40px
+}
+.radio.checked.error {
+  background-position: -20px -100px
+}
+.radio.focus {
+  background-position: -20px -20px;
+}
+.radio.checked {
+  background-position: -20px -60px
+}
+.radio.checked.focus {
+  background-position: -20px -80px
+}
+.combobox {
+  position: relative;
+  padding: 0 30px 0 0;
+  background: transparent right -280px url(images/bg_textbox.png) no-repeat;
+}
+.combobox .selected {
+  display: block;
+  background: transparent left -240px url(images/bg_textbox.png) no-repeat;
+  height: 31px;
+  line-height: 31px;
+  padding: 0 0 0 15px;
+  font-family: "Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+  font-size: 12px;
+}
+.combobox select {
+  height: 31px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+.combobox.error {
+  background-position: right -360px;
+}
+.combobox.error .selected {
+  background-position: left -320px;
+}
+.combobox.focus {
+  background-position: right -440px;
+  z-index:-1;
+}
+.combobox.focus .selected {
+  background-position: left -400px;
+  z-index:-1;
+}
